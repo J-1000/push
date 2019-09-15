@@ -13,6 +13,13 @@ const session    = require("express-session");
 const MongoStore = require('connect-mongo')(session);
 const flash      = require("connect-flash");
     
+const webPush = require('web-push');
+
+webPush.setVapidDetails(
+  'mailto:hello@ofcourseistillloveyou.de.',
+  process.env.VAPID_PUBLIC_KEY, 
+  process.env.VAPID_PRIVATE_KEY
+);
 
 mongoose
   .connect('mongodb://localhost/push', {useNewUrlParser: true})
