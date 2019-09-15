@@ -1,7 +1,7 @@
 {
-  "name": "Project 2 - Monitoring tool for Github",
-  "short_name": "Project 2",
-  "description": "Monitoring Github repositories for issues suited for staring with open source",
+  "name": "push",
+  "short_name": "push",
+  "description": "test implementation of web push notifications",
   "icons": [
   	{
 			"src": "/android-chrome-192x192.png",
